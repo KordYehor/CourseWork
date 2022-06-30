@@ -36,26 +36,26 @@ void List::Append(Data data) {
 Choice List::ChooseFind() {
 	int choice;
 	Choice ch1;
-	std::cout << stringLeftAlign(20+10,stringCenterAlign(20, "Ìåíþ âûáîðà ïîèñêà", '-'));
-	std::cout << "\n\t1 - Ïîêàçàòü âåñü ñïèñîê"
-		"\n\t2 - Íàéòè ïî èìåíè"
-		"\n\t3 - Íàéòè ïî ID"
-		"\n\t4 - Íàéòè ïî äîëæíîñòè"
-		"\n\t5 - Íàéòè ïî íîìåðó"
-		"\n\t6 - Íàéòè ïî çàðïëàòå"
-		"\n\t7 - Íàéòè ïî äèàïàçîíó çàðïëàò"
-		"\n\t8 - Íàéòè ïî êîëè÷åñòâó âûõîäíûõ äíåé"
-		"\n\t9 - Íàéòè ïî äèàïàçîíó âûõîäíûõ äíåé"
-		"\n\t10 - Íàéòè ïî êîëè÷åñòâó ðàáî÷èõ äíåé"
-		"\n\t11 - Íàéòè ïî äèàïàçîíó ðàáî÷èõ äíåé"
-		"\n\t12 - Íàéòè ïî îòïóñêó"
-		"\n\t13 - Âûõîä";
-	std::cout << "\nÄåéñòâèå :";
+	std::cout << stringLeftAlign(20+10,stringCenterAlign(20, "ÃŒÃ¥Ã­Ã¾ Ã¢Ã»Ã¡Ã®Ã°Ã  Ã¯Ã®Ã¨Ã±ÃªÃ ", '-'));
+	std::cout << "\n\t1 - ÃÃ®ÃªÃ Ã§Ã Ã²Ã¼ Ã¢Ã¥Ã±Ã¼ Ã±Ã¯Ã¨Ã±Ã®Ãª"
+		"\n\t2 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã¨Ã¬Ã¥Ã­Ã¨"
+		"\n\t3 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® ID"
+		"\n\t4 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã¤Ã®Ã«Ã¦Ã­Ã®Ã±Ã²Ã¨"
+		"\n\t5 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã­Ã®Ã¬Ã¥Ã°Ã³"
+		"\n\t6 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã§Ã Ã°Ã¯Ã«Ã Ã²Ã¥"
+		"\n\t7 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã³ Ã§Ã Ã°Ã¯Ã«Ã Ã²"
+		"\n\t8 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã³ Ã¢Ã»ÃµÃ®Ã¤Ã­Ã»Ãµ Ã¤Ã­Ã¥Ã©"
+		"\n\t9 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã³ Ã¢Ã»ÃµÃ®Ã¤Ã­Ã»Ãµ Ã¤Ã­Ã¥Ã©"
+		"\n\t10 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã³ Ã°Ã Ã¡Ã®Ã·Ã¨Ãµ Ã¤Ã­Ã¥Ã©"
+		"\n\t11 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã³ Ã°Ã Ã¡Ã®Ã·Ã¨Ãµ Ã¤Ã­Ã¥Ã©"
+		"\n\t12 - ÃÃ Ã©Ã²Ã¨ Ã¯Ã® Ã®Ã²Ã¯Ã³Ã±ÃªÃ³"
+		"\n\t13 - Ã‚Ã»ÃµÃ®Ã¤";
+	std::cout << "\nÃ„Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¥ :";
 	choice = GetNum();
 	if (choice == -1) {
 		system("cls");
-		std::cout << " Îøèáêà!\n Âû ââåëè íåäîïóñòèìûé ñèìâîë ïðè âûáîðå äåéñòâèÿ!\n Äëÿ âûáîðà îïåðàöèè ââåäèòå ÷èñëà 1-12 èëè 13, äëÿ âûõîäà\n";
-		std::cout << "Íàæìèòå \"Enter\" ÷òîáû ïðîäîëæèòü\n";
+		std::cout << " ÃŽÃ¸Ã¨Ã¡ÃªÃ !\n Ã‚Ã» Ã¢Ã¢Ã¥Ã«Ã¨ Ã­Ã¥Ã¤Ã®Ã¯Ã³Ã±Ã²Ã¨Ã¬Ã»Ã© Ã±Ã¨Ã¬Ã¢Ã®Ã« Ã¯Ã°Ã¨ Ã¢Ã»Ã¡Ã®Ã°Ã¥ Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¿!\n Ã„Ã«Ã¿ Ã¢Ã»Ã¡Ã®Ã°Ã  Ã®Ã¯Ã¥Ã°Ã Ã¶Ã¨Ã¨ Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã  1-12 Ã¨Ã«Ã¨ 13, Ã¤Ã«Ã¿ Ã¢Ã»ÃµÃ®Ã¤Ã \n";
+		std::cout << "ÃÃ Ã¦Ã¬Ã¨Ã²Ã¥ \"Enter\" Ã·Ã²Ã®Ã¡Ã» Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¼\n";
 		_getch();
 	}
 	switch (choice) {
@@ -64,63 +64,63 @@ Choice List::ChooseFind() {
 		break;
 	case 2:
 		ch1.setChoice(PRINT_BY_NAME);
-		std::cout << " Ââåäèòå èìÿ :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ :";
 		ch1.setStringParam1();
 		break;
 	case 3:
 		ch1.setChoice(PRINT_BY_ID);
-		std::cout << " Ââåäèòå ID :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ID :";
 		ch1.setIntParam1();
 		break;
 	case 4:
 		ch1.setChoice(PRINT_BY_POSITION);
-		std::cout << " Ââåäèòå äîëæíîñòü :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¤Ã®Ã«Ã¦Ã­Ã®Ã±Ã²Ã¼ :";
 		ch1.setStringParam1();
 		break;
 	case 5:
 		ch1.setChoice(PRINT_BY_NUMBER);
-		std::cout << " Ââåäèòå íîìåð :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã®Ã¬Ã¥Ã° :";
 		ch1.setIntParam1();
 		break;
 	case 6:
 		ch1.setChoice(PRINT_BY_SALARY);
-		std::cout << " Ââåäèòå çàðïëàòó :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã§Ã Ã°Ã¯Ã«Ã Ã²Ã³ :";
 		ch1.setIntParam1();
 		break;
 	case 7:
 		ch1.setChoice(PRINT_BETWEEN_SALARY);
-		std::cout << " Ââåäèòå íèæíþþ ãðàíèöó äèàïàçîíà çàðïëàòû :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã¨Ã¦Ã­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã§Ã Ã°Ã¯Ã«Ã Ã²Ã» :";
 		ch1.setIntParam1();
-		std::cout << " Ââåäèòå âåðõíþþ ãðàíèöó äèàïàçîíà çàðïëàòû :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã¥Ã°ÃµÃ­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã§Ã Ã°Ã¯Ã«Ã Ã²Ã» :";
 		ch1.setIntParam2();
 		break;
 	case 8:
 		ch1.setChoice(PRINT_BY_DAYOFFS);
-		std::cout << " Ââåäèòå êîëè÷åñâòî âûõîäíûõ :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã¢Ã²Ã® Ã¢Ã»ÃµÃ®Ã¤Ã­Ã»Ãµ :";
 		ch1.setIntParam1();
 		break;
 	case 9:
 		ch1.setChoice(PRINT_BETWEEN_DAYOFFS);
-		std::cout << " Ââåäèòå íèæíþþ ãðàíèöó äèàïàçîíà âûõîäíûé äíåé :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã¨Ã¦Ã­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã¢Ã»ÃµÃ®Ã¤Ã­Ã»Ã© Ã¤Ã­Ã¥Ã© :";
 		ch1.setIntParam1();
-		std::cout << " Ââåäèòå âåðõíþþ ãðàíèöó äèàïàçîíà âûõîäíûõ äíåé :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã¥Ã°ÃµÃ­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã¢Ã»ÃµÃ®Ã¤Ã­Ã»Ãµ Ã¤Ã­Ã¥Ã© :";
 		ch1.setIntParam2();
 		break;
 	case 10:
 		ch1.setChoice(PRINT_BY_WEEKDAYS);
-		std::cout << " Ââåäèòå êîëè÷åñâòî ðàáî÷èõ äíåé :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃªÃ®Ã«Ã¨Ã·Ã¥Ã±Ã¢Ã²Ã® Ã°Ã Ã¡Ã®Ã·Ã¨Ãµ Ã¤Ã­Ã¥Ã© :";
 		ch1.setIntParam1();
 		break;
 	case 11:
 		ch1.setChoice(PRINT_BETWEEN_WEEKDAYS);
-		std::cout << " Ââåäèòå íèæíþþ ãðàíèöó äèàïàçîíà ðàáî÷èõ äíåé :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã­Ã¨Ã¦Ã­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã°Ã Ã¡Ã®Ã·Ã¨Ãµ Ã¤Ã­Ã¥Ã© :";
 		ch1.setIntParam1();
-		std::cout << " Ââåäèòå âåðõíþþ ãðàíèöó äèàïàçîíà ðàáî÷èõ äíåé :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã¥Ã°ÃµÃ­Ã¾Ã¾ Ã£Ã°Ã Ã­Ã¨Ã¶Ã³ Ã¤Ã¨Ã Ã¯Ã Ã§Ã®Ã­Ã  Ã°Ã Ã¡Ã®Ã·Ã¨Ãµ Ã¤Ã­Ã¥Ã© :";
 		ch1.setIntParam2();
 		break;
 	case 12:
 		ch1.setChoice(PRINT_BY_VACATION);
-		std::cout << " Ââåäèòå '0' ÷òîáû íàéòè âñåõ êòî íå â îòïóñêå.\n Ââåäèòå '1' ÷òîáû íàéòè âñåõ êòî â îòïóñêå.\n :";
+		std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ '0' Ã·Ã²Ã®Ã¡Ã» Ã­Ã Ã©Ã²Ã¨ Ã¢Ã±Ã¥Ãµ ÃªÃ²Ã® Ã­Ã¥ Ã¢ Ã®Ã²Ã¯Ã³Ã±ÃªÃ¥.\n Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ '1' Ã·Ã²Ã®Ã¡Ã» Ã­Ã Ã©Ã²Ã¨ Ã¢Ã±Ã¥Ãµ ÃªÃ²Ã® Ã¢ Ã®Ã²Ã¯Ã³Ã±ÃªÃ¥.\n :";
 		ch1.setIntParam1();
 		break;
 	case 13:
@@ -133,26 +133,26 @@ Choice List::ChooseFind() {
 
 void List::PrintOne(Node* p,bool mode) {
 	if (mode == false) {
-		std::cout << stringLeftAlign(ML.MaxIdL, (std::string)std::to_string(p->data.getID())) << "|" << stringLeftAlign(ML.MaxNameL, p->data.getName()) << "|" << stringLeftAlign(ML.MaxPosL, p->data.getPosition()) << "|" << stringLeftAlign(12, std::to_string(p->data.getWeekdays()) + "/" + std::to_string(p->data.getDayOffs())) << "|" << stringLeftAlign(ML.MaxNumL, p->data.getNumber()) << "|" << stringLeftAlign(ML.MaxSalaryL + 5, std::to_string(p->data.getSalary()) + " ãðí. ") << "|" << stringLeftAlign(8, std::to_string(p->data.getVacation())) << "|"
+		std::cout << stringLeftAlign(ML.MaxIdL, (std::string)std::to_string(p->data.getID())) << "|" << stringLeftAlign(ML.MaxNameL, p->data.getName()) << "|" << stringLeftAlign(ML.MaxPosL, p->data.getPosition()) << "|" << stringLeftAlign(12, std::to_string(p->data.getWeekdays()) + "/" + std::to_string(p->data.getDayOffs())) << "|" << stringLeftAlign(ML.MaxNumL, p->data.getNumber()) << "|" << stringLeftAlign(ML.MaxSalaryL + 5, std::to_string(p->data.getSalary()) + " Ã£Ã°Ã­. ") << "|" << stringLeftAlign(8, std::to_string(p->data.getVacation())) << "|"
 			<< stringLeftAlign(18, "...") << "\n";
 		std::cout << stringLeftAlign(18 + 8 + 5 + 12 + ML.MaxIdL + ML.MaxNameL + ML.MaxNumL + ML.MaxPosL + ML.MaxSalaryL, "-", '-') << "\n";
 	}
 	else if (mode == true) {
-		std::cout << stringLeftAlign(ML.MaxIdL, std::to_string(p->data.getID())) << "|" << stringLeftAlign(ML.MaxNameL, p->data.getName()) << "|" << stringLeftAlign(ML.MaxPosL, p->data.getPosition()) << "|" << stringLeftAlign(12, std::to_string(p->data.getWeekdays()) + "/" + std::to_string(p->data.getDayOffs())) << "|" << stringLeftAlign(ML.MaxNumL, p->data.getNumber()) << "|" << stringLeftAlign(ML.MaxSalaryL + 5, std::to_string(p->data.getSalary()) + " ãðí. ") << "|" << stringLeftAlign(8, std::to_string(p->data.getVacation())) << "|";
+		std::cout << stringLeftAlign(ML.MaxIdL, std::to_string(p->data.getID())) << "|" << stringLeftAlign(ML.MaxNameL, p->data.getName()) << "|" << stringLeftAlign(ML.MaxPosL, p->data.getPosition()) << "|" << stringLeftAlign(12, std::to_string(p->data.getWeekdays()) + "/" + std::to_string(p->data.getDayOffs())) << "|" << stringLeftAlign(ML.MaxNumL, p->data.getNumber()) << "|" << stringLeftAlign(ML.MaxSalaryL + 5, std::to_string(p->data.getSalary()) + " Ã£Ã°Ã­. ") << "|" << stringLeftAlign(8, std::to_string(p->data.getVacation())) << "|";
 		p->data.PrintExp(32 + ML.MaxIdL + ML.MaxNameL + ML.MaxNumL + ML.MaxPosL + ML.MaxSalaryL);
 		std::cout << stringLeftAlign(18 + 8 + 5 + 12 + ML.MaxIdL + ML.MaxNameL + ML.MaxNumL + ML.MaxPosL + ML.MaxSalaryL, "-", '-') << "\n";
 	}
 }
 
-void List::Print(int tumblr, int param1,int param2, std::string strParam1, bool mode) { // mode == false - îòîáàðçèòü çàïèñè áåç îïûòà; true - ñ îïûòîì
+void List::Print(int tumblr, int param1,int param2, std::string strParam1, bool mode) { // mode == false - Ã®Ã²Ã®Ã¡Ã Ã°Ã§Ã¨Ã²Ã¼ Ã§Ã Ã¯Ã¨Ã±Ã¨ Ã¡Ã¥Ã§ Ã®Ã¯Ã»Ã²Ã ; true - Ã± Ã®Ã¯Ã»Ã²Ã®Ã¬
 	if (!head) {
 		std::cout << "\t##############\n";
-		std::cout << "\t# Ëèñò ïóñò !#\n";
+		std::cout << "\t# Ã‹Ã¨Ã±Ã² Ã¯Ã³Ã±Ã² !#\n";
 		std::cout << "\t##############\n";
 		return;
 	}
 	Node* p = head;
-	std::cout << stringLeftAlign(ML.MaxIdL, "ID") << "|" << stringLeftAlign(ML.MaxNameL, "Èìÿ") << "|" << stringLeftAlign(ML.MaxPosL, "Äîëæíîñòü") << "|" << stringLeftAlign(12, "Ãðàôèê Ð/Â") << "|" << stringLeftAlign(ML.MaxNumL, "Íîìåð òåëåôîíà") << "|" << stringLeftAlign(ML.MaxSalaryL + 5, "Çàðïëàòà") << "|" << stringLeftAlign(8, "Îòïóñê") << "|" << stringLeftAlign(18, "Îïûò") << "\n" << stringLeftAlign(18+8+5+12+ML.MaxIdL+ML.MaxNameL+ML.MaxNumL+ML.MaxPosL+ML.MaxSalaryL, "-", '-') << "\n";
+	std::cout << stringLeftAlign(ML.MaxIdL, "ID") << "|" << stringLeftAlign(ML.MaxNameL, "ÃˆÃ¬Ã¿") << "|" << stringLeftAlign(ML.MaxPosL, "Ã„Ã®Ã«Ã¦Ã­Ã®Ã±Ã²Ã¼") << "|" << stringLeftAlign(12, "ÃƒÃ°Ã Ã´Ã¨Ãª Ã/Ã‚") << "|" << stringLeftAlign(ML.MaxNumL, "ÃÃ®Ã¬Ã¥Ã° Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã ") << "|" << stringLeftAlign(ML.MaxSalaryL + 5, "Ã‡Ã Ã°Ã¯Ã«Ã Ã²Ã ") << "|" << stringLeftAlign(8, "ÃŽÃ²Ã¯Ã³Ã±Ãª") << "|" << stringLeftAlign(18, "ÃŽÃ¯Ã»Ã²") << "\n" << stringLeftAlign(18+8+5+12+ML.MaxIdL+ML.MaxNameL+ML.MaxNumL+ML.MaxPosL+ML.MaxSalaryL, "-", '-') << "\n";
 	switch (tumblr) {
 	case PRINT_ALL:
 		while (p) {
@@ -247,7 +247,7 @@ Node* List::FindByID(int ID) {
 	}
 	if (p)
 		return p;
-	std::cout << "\n Îøèáêà!(Íåò äàííûõ)\n";
+	std::cout << "\n ÃŽÃ¸Ã¨Ã¡ÃªÃ !(ÃÃ¥Ã² Ã¤Ã Ã­Ã­Ã»Ãµ)\n";
 	return nullptr;
 }
 
@@ -256,13 +256,13 @@ Node* List::FindByID(int ID) {
 void List::DeleteFirst() {
 	if (!head) {
 		std::cout << " ##############\n";
-		std::cout << " # Ëèñò ïóñò! #\n";
+		std::cout << " # Ã‹Ã¨Ã±Ã² Ã¯Ã³Ã±Ã²! #\n";
 		std::cout << " ##############\n";
 		return;
 	}
-	Node* buffer = head;
+	Node* temp = head;
 	head = head->next;
-	delete buffer;
+	delete temp;
 	count--;
 	FindMaxLength();
 }
@@ -270,7 +270,7 @@ void List::DeleteFirst() {
 void List::Delete(int ID) {
 	if (!head) {
 		std::cout << " ##############\n";
-		std::cout << " # Ëèñò ïóñò! #\n";
+		std::cout << " # Ã‹Ã¨Ã±Ã² Ã¯Ã³Ã±Ã²! #\n";
 		std::cout << " ##############\n";
 		return;
 	}
@@ -282,7 +282,7 @@ void List::Delete(int ID) {
 	while (p->next && !(p->next->data.getID() == ID))
 		p = p->next;
 	if (!p->next) {
-		std::cout << "Íåò äàííûõ\n";
+		std::cout << "ÃÃ¥Ã² Ã¤Ã Ã­Ã­Ã»Ãµ\n";
 		return;
 	}
 	Node* temp = p->next;
@@ -297,13 +297,13 @@ void List::Clear() {
 	while (head)
 		DeleteFirst();
 	head = tail = nullptr;
-	std::cout << " Ñïèñîê óñïåøíî î÷èùåí\n";
+	std::cout << " Ã‘Ã¯Ã¨Ã±Ã®Ãª Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã®Ã·Ã¨Ã¹Ã¥Ã­\n";
 }
 
 void List::Change(int ID) {
 	Node* data = FindByID(ID);
 	if (!data) {
-		std::cout << " Çàïèñü íå íàéäåíà!\n Íàæìèòå \"Enter\" ÷òîáû ïðîäîëæèòü";
+		std::cout << " Ã‡Ã Ã¯Ã¨Ã±Ã¼ Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã !\n ÃÃ Ã¦Ã¬Ã¨Ã²Ã¥ \"Enter\" Ã·Ã²Ã®Ã¡Ã» Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¼";
 		_getch();
 		return;
 	}
@@ -329,15 +329,15 @@ void List::UploadIntoFile() {
 	
 	std::ofstream datafile;
 	std::string file,str;
-	std::cout << " Ââåäèòå èìÿ ôàéëà èëè ïóòü ê íåìó(Áåç ðàñøèðåíèÿ ôàéëà.Åñëè âû ââîäèòå ïóòü ê ôàéëó,çíàêè '\\' íóæíî äóáëèðîâàòü) : ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã¨Ã«Ã¨ Ã¯Ã³Ã²Ã¼ Ãª Ã­Ã¥Ã¬Ã³(ÃÃ¥Ã§ Ã°Ã Ã±Ã¸Ã¨Ã°Ã¥Ã­Ã¨Ã¿ Ã´Ã Ã©Ã«Ã .Ã…Ã±Ã«Ã¨ Ã¢Ã» Ã¢Ã¢Ã®Ã¤Ã¨Ã²Ã¥ Ã¯Ã³Ã²Ã¼ Ãª Ã´Ã Ã©Ã«Ã³,Ã§Ã­Ã ÃªÃ¨ '\\' Ã­Ã³Ã¦Ã­Ã® Ã¤Ã³Ã¡Ã«Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼) : ";
 	std::cin >> file;
-	std::cout << " Ýòî äåéñòâèå ìîæåò ïðèâåñòè ê ïîòåðå äàííûõ â ñëó÷àå åñëè òàêîé ôàéë ñóùåñòâóåò! ×òîáû ïðîäîëæèòü ââåäèòå ÏÎÄÒÂÅÐÄÈÒÜ :";
+	std::cout << " ÃÃ²Ã® Ã¤Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¥ Ã¬Ã®Ã¦Ã¥Ã² Ã¯Ã°Ã¨Ã¢Ã¥Ã±Ã²Ã¨ Ãª Ã¯Ã®Ã²Ã¥Ã°Ã¥ Ã¤Ã Ã­Ã­Ã»Ãµ Ã¢ Ã±Ã«Ã³Ã·Ã Ã¥ Ã¥Ã±Ã«Ã¨ Ã²Ã ÃªÃ®Ã© Ã´Ã Ã©Ã« Ã±Ã³Ã¹Ã¥Ã±Ã²Ã¢Ã³Ã¥Ã²! Ã—Ã²Ã®Ã¡Ã» Ã¯Ã°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¼ Ã¢Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ ÃÃŽÃ„Ã’Ã‚Ã…ÃÃ„ÃˆÃ’Ãœ :";
 	std::getline(std::cin, str);
 	std::getline(std::cin, str);
-	if (str != "ÏÎÄÒÂÅÐÄÈÒÜ") return;
+	if (str != "ÃÃŽÃ„Ã’Ã‚Ã…ÃÃ„ÃˆÃ’Ãœ") return;
 	datafile.open(file + ".txt", std::ios::out);
 	if (!datafile.is_open()) {
-		std::cout << " Îøèáêà ïðè îòêðûòèè ôàéëà!\n";
+		std::cout << " ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¯Ã°Ã¨ Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¨ Ã´Ã Ã©Ã«Ã !\n";
 		return;
 	}
 
@@ -357,19 +357,19 @@ void List::UploadIntoFile() {
 
 void List::DownloadFromFile() {
 	if (!this->isEmpty()) {
-		std::cout << " Ëèñò íå ïóñò\n";
+		std::cout << " Ã‹Ã¨Ã±Ã² Ã­Ã¥ Ã¯Ã³Ã±Ã²\n";
 		return;
 	}
 	std::string name,company,file,position,number,salary_str,ID_str,years_str,weekdays_str,day_offs_str,vacation_str;
 	std::ifstream datafile;
 	Data object;
 	std::vector<background> vec;
-	std::cout << " Ââåäèòå èìÿ ôàéëà èëè ïóòü ê íåìó(Áåç ðàñøèðåíèÿ ôàéëà.Åñëè âû ââîäèòå ïóòü ê ôàéëó,çíàêè '\\' íóæíî äóáëèðîâàòü) : ";
+	std::cout << " Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã¬Ã¿ Ã´Ã Ã©Ã«Ã  Ã¨Ã«Ã¨ Ã¯Ã³Ã²Ã¼ Ãª Ã­Ã¥Ã¬Ã³(ÃÃ¥Ã§ Ã°Ã Ã±Ã¸Ã¨Ã°Ã¥Ã­Ã¨Ã¿ Ã´Ã Ã©Ã«Ã .Ã…Ã±Ã«Ã¨ Ã¢Ã» Ã¢Ã¢Ã®Ã¤Ã¨Ã²Ã¥ Ã¯Ã³Ã²Ã¼ Ãª Ã´Ã Ã©Ã«Ã³,Ã§Ã­Ã ÃªÃ¨ '\\' Ã­Ã³Ã¦Ã­Ã® Ã¤Ã³Ã¡Ã«Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼) : ";
 	std::cin >> file;
 	datafile.open(file + ".txt", std::ios::in);
 	
 	if (!datafile.is_open()) {
-		std::cout << " Ôàéë íå íàéäåí/îøèáêà îòêðûòèÿ ôàéëà!\n";
+		std::cout << " Ã”Ã Ã©Ã« Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­/Ã®Ã¸Ã¨Ã¡ÃªÃ  Ã®Ã²ÃªÃ°Ã»Ã²Ã¨Ã¿ Ã´Ã Ã©Ã«Ã !\n";
 		return;
 	}
 	std::getline(datafile, ID_str);
@@ -409,7 +409,7 @@ void List::DownloadFromFile() {
 		}
 		object.setData(std::atoi(salary_str.c_str()), std::atoi(vacation_str.c_str()), std::atoi(weekdays_str.c_str()), std::atoi(day_offs_str.c_str()), name, position, number, vec, std::atoi(ID_str.c_str()));
 	}
-	std::cout << " Äàííûå óñïåøíî çàãðóæåíû\n";
+	std::cout << " Ã„Ã Ã­Ã­Ã»Ã¥ Ã³Ã±Ã¯Ã¥Ã¸Ã­Ã® Ã§Ã Ã£Ã°Ã³Ã¦Ã¥Ã­Ã»\n";
 	datafile.close();
 }
 
@@ -419,14 +419,14 @@ void List::sort() {
 	Node* p = head;
 	int choice;
 	bool check = false;
-	std::cout <<"\t1 - Îòñîðòèðîâàòü çà ID\n"
-				"\t2 - Îòñîðòèðîâàòü çà èìåíåíàìè\n"
-				"\t3 - Îòñîðòèðîâàòü çà çàðïëàòîé\n"
-				"\t4 - Îòñîðòèðîâàòü çà äîëæíîñòüþ\n"
-				"\t5 - Îòñîðòèðîâàòü çà íîìåðîì òåëåôîíà\n"
-				"\t6 - Îòñîðòèðîâàòü çà ãðàôèêîì\n"
-				"\t7 - Îòñîðòèðîâàòü çà îòïóñêîì\n";
-	std::cout << " Äåéñòâèå:";
+	std::cout <<"\t1 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  ID\n"
+				"\t2 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã¨Ã¬Ã¥Ã­Ã¥Ã­Ã Ã¬Ã¨\n"
+				"\t3 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã§Ã Ã°Ã¯Ã«Ã Ã²Ã®Ã©\n"
+				"\t4 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã¤Ã®Ã«Ã¦Ã­Ã®Ã±Ã²Ã¼Ã¾\n"
+				"\t5 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã­Ã®Ã¬Ã¥Ã°Ã®Ã¬ Ã²Ã¥Ã«Ã¥Ã´Ã®Ã­Ã \n"
+				"\t6 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã£Ã°Ã Ã´Ã¨ÃªÃ®Ã¬\n"
+				"\t7 - ÃŽÃ²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã§Ã  Ã®Ã²Ã¯Ã³Ã±ÃªÃ®Ã¬\n";
+	std::cout << " Ã„Ã¥Ã©Ã±Ã²Ã¢Ã¨Ã¥:";
 	std::cin >> choice;
 	switch (choice) {
 	case 1:
